@@ -12,6 +12,7 @@ export function logout(){
 function Home(){
 
     const params = useParams()
+    console.log(params)
     const navigate = useNavigate();
     useEffect(() =>{
         if(!localStorage.getItem('data'))
@@ -24,7 +25,6 @@ function Home(){
         //setIsSearch(false);
         console.log('hello');
         navigate(`/home`)
-        console.log(params)
     }
 
     return (
