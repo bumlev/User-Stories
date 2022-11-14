@@ -8,7 +8,7 @@ import {RepositoriesProvider, SelectRepositoryProvider, SelectUserProvider, User
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <Router>
+      <Router  basename={process.env.PUBLIC_URL}>
         <UsersProvider>
         <SelectUserProvider>
         <RepositoriesProvider>
