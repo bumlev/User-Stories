@@ -22,8 +22,9 @@ function Home(){
 
     function goHome(){
         //setIsSearch(false);
+        console.log(params)
         console.log('hello');
-        window.location.href=`/home`;
+        navigate(`/home`)
     }
 
     return (
