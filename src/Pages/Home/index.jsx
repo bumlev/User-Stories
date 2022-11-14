@@ -9,12 +9,6 @@ export function logout(){
     localStorage.clear();
 }
 
-const navigate = useNavigate();
-function goHome(){
-    navigate(`/home`);
-}
-
-
 function Home(){
 
     const params = useParams()
@@ -24,17 +18,19 @@ function Home(){
             navigate('/');
     })
 
-    const{isSearch ,  setIsSearch} = useContext(SelectRepositoryContext);
+    const{isSearch , setIsSearch} = useContext(SelectRepositoryContext);
 
-    if(isSearch)
-        goHome();
+    function goHome(){
+        setIsSearch(false);
+        navigate(`/home`)
+    }
 
     return (
         <>
             <nav>
                 <ul className="list_menu">
                     <li className="Name_project">
-                        <Link onClick={()=>setIsSearch(false)}>
+                        <Link to={`/home`}>
                             <i className="fa fa-github"></i>
                             <span data-testid="git">GitHub API</span>
                         </Link>
