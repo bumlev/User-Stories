@@ -23,7 +23,7 @@ function Login() {
     <Head>
       <HeadH1>Welcome</HeadH1>
       <HeadP>GitHub API</HeadP>
-      <ButtonAuth href={`https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}`}>
+      <ButtonAuth href={`https://github.com/login/oauth/authorize?client_id=${CLIENT_ID}&scope=user&redirect_uri=${REDIRECT_URI}`}>
         <ButtonAuthIcon className="fa fa-github"></ButtonAuthIcon>
         <ButtonAuthSpan>LOGIN WITH GITHUB</ButtonAuthSpan>
       </ButtonAuth>
