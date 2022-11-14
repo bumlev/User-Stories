@@ -22,7 +22,7 @@ function Home(){
 
     function goHome(){
         //setIsSearch(false);
-        params= {};
+        params= { };
         console.log('hello');
         navigate(`/home`)
     }
@@ -32,7 +32,7 @@ function Home(){
             <nav>
                 <ul className="list_menu">
                     <li className="Name_project">
-                        <Link  onClick={()=>goHome()}>
+                        <Link to={'/home'}  onClick={()=>goHome()}>
                             <i className="fa fa-github"></i>
                             <span data-testid="git">GitHub API</span>
                         </Link>
