@@ -9,8 +9,9 @@ export function logout(){
     localStorage.clear();
 }
 
-function goHome(navigat){
+function goHome(navigat , params){
     //setIsSearch(false);
+    params={};
     console.log('hello');
     navigat(`/home`)
 }
@@ -33,7 +34,7 @@ function Home(){
             <nav>
                 <ul className="list_menu">
                     <li className="Name_project">
-                        <Link to={'/home'} onClick={()=>goHome(navigate)}>
+                        <Link  onClick={()=>goHome(navigate , params)}>
                             <i className="fa fa-github"></i>
                             <span data-testid="git">GitHub API</span>
                         </Link>
