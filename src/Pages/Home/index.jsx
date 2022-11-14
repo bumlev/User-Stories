@@ -11,6 +11,7 @@ export function logout(){
 
 function goHome(navigate){
     //setIsSearch(false);
+    console.log('hello');
     navigate(`/home`)
 }
 
