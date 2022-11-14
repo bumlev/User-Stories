@@ -1,0 +1,119 @@
+.contain{
+    display: flex;
+    flex-direction: column;
+    margin-top:80px
+}
+
+.search_block{
+    display:flex;
+    border-bottom:1px solid rgb(219, 219, 219);
+    padding:25px 0 25px 13%;
+    margin:0 75px 0 75px;
+}
+
+.search_lists{
+    display: flex;
+    position: absolute;
+    top: 144px;
+    left: 18.5%;
+    width: auto;
+    flex-direction: column;
+    border:1px solid rgb(224, 223, 223);
+    background-color: white;
+    margin-top:5px;
+}
+
+.found_lists{
+    display: flex;
+    padding: 5px 10px  5px 10px;
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    border-bottom:1px solid rgb(224, 223, 223);
+}
+
+.found_lists img{
+    width:50px;
+    height: 50px;
+    border-radius:50px;
+}
+
+.found_lists span{
+    padding-left: 10px;
+}
+
+.search_block input{
+    width: 250px;
+    height: 40px;
+    font-size: medium;
+    border-radius: 7px;
+    background-color: white;
+    padding-left: 10px;
+    color: #929191;
+    border:1px solid rgb(233, 230, 230);
+}
+.search_block button{
+    width: 130px; 
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(100, 100, 247);
+    border:1px solid rgb(100, 100, 247);
+    color: white;
+    font-size: medium;
+}
+
+.button_back{
+    width: 130px; 
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color: rgb(100, 100, 247);
+    border:1px solid rgb(100, 100, 247);
+    color: white;
+    font-size: medium;
+    height: 40px;
+}
+
+.list_cards{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin:40px 0 0 0 ;
+    padding: 20px 20px 20px 20px;
+}
+.cards{
+    display: flex;
+    width: 370px;
+    border:1px solid;
+    margin-bottom: 40px;
+    padding:20px 10px 20px 10px;
+    background-color: white;
+    border:1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
+.cards img{
+    width: 70px;
+    height: 70px;
+    border:1px solid;
+    border-radius: 70px;
+    border:1px solid rgb(219, 219, 219)
+}
+
+.card_profile{
+    display: flex;
+    flex-direction: column;;
+    margin-left: 20px;
+}
+
+.card_profile span{
+    font-size: 25px;
+}
+.card_profile a{
+    border:1px solid rgb(233, 232, 232);
+    border-radius:7px;
+    color: black;
+    text-decoration: none;
+    margin:15px 0px 0 0px;
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(228, 228, 247);
+    color:blue;
+}
