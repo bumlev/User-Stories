@@ -21,7 +21,7 @@ function Home(){
     const{ setIsSearch} = useContext(SelectRepositoryContext);
 
     function goHome(){
-        setIsSearch(false);
+        //setIsSearch(false);
         navigate(`/home`);
     }
 
