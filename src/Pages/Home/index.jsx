@@ -9,10 +9,10 @@ export function logout(){
     localStorage.clear();
 }
 
-function goHome(navigate){
+function goHome(navigat){
     //setIsSearch(false);
     console.log('hello');
-    navigate(`/home`)
+    navigat(`/home`)
 }
 
 function Home(){
