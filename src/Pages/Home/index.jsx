@@ -9,6 +9,7 @@ export function logout(){
     localStorage.clear();
 }
 
+const navigate = useNavigate();
 function goHome(){
     navigate(`/home`);
 }
