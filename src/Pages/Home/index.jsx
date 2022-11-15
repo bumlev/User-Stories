@@ -1,5 +1,5 @@
 import React ,  { useContext, useEffect} from 'react';
-import { createBrowserRouter, Link, useNavigate, useParams } from 'react-router-dom';
+import { BrowserRouter, Link, useNavigate, useParams } from 'react-router-dom';
 import '../../css/home.css'
 import { SelectRepositoryContext } from '../../utils/hooks/context';
 import Users from '../Users';
@@ -25,10 +25,10 @@ function Home(){
     function goHome(){
         //setIsSearch(false);
         console.log('hello');
-        //navigate(`/home`)
-       const hist =  createBrowserRouter();
-       hist.push(`/home`)
 
+        useEffect(()=>{
+            navigate(`/home`)
+        })
     }
 
     return (
