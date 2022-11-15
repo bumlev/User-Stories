@@ -22,14 +22,13 @@ function Home(){
 
     const{isSearch , setIsSearch} = useContext(SelectUserContext);
    
-    console.log(isSearch)
 
     return (
         <>
             <nav>
                 <ul className="list_menu">
                     <li className="Name_project">
-                        <Link to={`/home`}>
+                        <Link onClick={()=>setIsSearch(false)}>
                             <i className="fa fa-github"></i>
                             <span data-testid="git">GitHub API</span>
                         </Link>
@@ -38,7 +37,7 @@ function Home(){
                 </ul>
             </nav>
             {
-                !params.ProfileName && !params.repositoryname ? (
+                !params.ProfileName && !params.repositoryname && isSearch === false ? (
                     <Users/>
                 ):(
                     <User/>
