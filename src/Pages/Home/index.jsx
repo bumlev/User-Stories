@@ -9,18 +9,13 @@ export function logout(){
     localStorage.clear();
 }
 
-function goHome(){
-    //setIsSearch(false);
-    console.log('hello');
-    return redirect(`/home`)
-}
-
 function Home(){
 
     const params = useParams()
     console.log(params);
     
     const navigate = useNavigate();
+    
     useEffect(() =>{
         if(!localStorage.getItem('data'))
             navigate('/');
@@ -28,6 +23,11 @@ function Home(){
 
     const{isSearch , setIsSearch} = useContext(SelectRepositoryContext);
 
+    function goHome(){
+        //setIsSearch(false);
+        console.log('hello');
+        navigate(`/home`)
+    }
 
     return (
         <>

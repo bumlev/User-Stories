@@ -18,6 +18,7 @@ root.render(
             <Route path="/home" element={<Home/>} />
             <Route path="/user/:username" element={<Home/>} />
             <Route path='/profile/:ProfileName' element={<Home/>}/>
+            <Route path='/goHome' element={<Home/>} />
         </Routes>
         </SelectRepositoryProvider>
         </RepositoriesProvider>
