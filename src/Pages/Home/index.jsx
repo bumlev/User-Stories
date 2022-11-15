@@ -1,5 +1,5 @@
 import React ,  { useContext, useEffect} from 'react';
-import { BrowserRouter, Link, useNavigate, useParams } from 'react-router-dom';
+import {  Link, redirect, useNavigate, useParams } from 'react-router-dom';
 import '../../css/home.css'
 import { SelectRepositoryContext } from '../../utils/hooks/context';
 import Users from '../Users';
@@ -25,10 +25,7 @@ function Home(){
     function goHome(){
         //setIsSearch(false);
         console.log('hello');
-
-        useEffect(()=>{
-            navigate(`/home`)
-        })
+        return redirect(`/home`)
     }
 
     return (
