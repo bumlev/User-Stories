@@ -38,7 +38,7 @@ function Home(){
                 </ul>
             </nav>
             {
-                !params.ProfileName && !params.repositoryname && !isSearch ? (
+                !params.ProfileName && !params.repositoryname && isSearch == false ? (
                     <Users/>
                 ):(
                     <User/>
