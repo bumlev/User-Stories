@@ -26,6 +26,7 @@ function Home(){
     function goHome(){
         //setIsSearch(false);
         console.log('hello');
+        console.log(navigate(`/goHome`));
         return navigate(`/goHome`);
     }
 
