@@ -22,13 +22,7 @@ function Home(){
     })
 
     const{isSearch , setIsSearch} = useContext(SelectRepositoryContext);
-
-   /* function goHome(){
-        //setIsSearch(false);
-        console.log('hello');
-        console.log(navigate(`/goHome`));
-        return navigate(`/goHome`);
-    }*/
+    setIsSearch(false);
 
     return (
         <>
@@ -44,7 +38,7 @@ function Home(){
                 </ul>
             </nav>
             {
-                !params.ProfileName && !params.repositoryname ? (
+                !params.ProfileName && !params.repositoryname && !isSearch ? (
                     <Users/>
                 ):(
                     <User/>
