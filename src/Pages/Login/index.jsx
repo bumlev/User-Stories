@@ -6,7 +6,7 @@ function Login() {
 
   const navigate = useNavigate()
   const CLIENT_ID = '375fc25224e7d4cf342f';
-  const REDIRECT_URI = "https://bumlev.github.io/User-Stories/";
+  const REDIRECT_URI = "http://localhost:3000/";
   const tken = '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';
 
   useEffect(() =>{

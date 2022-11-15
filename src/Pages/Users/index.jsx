@@ -38,7 +38,7 @@ function Users(){
                     </div>
                     <div className="list_cards">
                         {   
-                            !isSearch ? (
+                            isSearch === false ? (
                                 isLoading ?(
                                     <div data-testid="loader">A Moment please ...</div>
                                 ):(
