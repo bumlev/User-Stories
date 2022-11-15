@@ -15,7 +15,7 @@ function Home(){
     console.log(params);
     
     const navigate = useNavigate();
-    
+
     useEffect(() =>{
         if(!localStorage.getItem('data'))
             navigate('/');
@@ -26,7 +26,7 @@ function Home(){
     function goHome(){
         //setIsSearch(false);
         console.log('hello');
-        navigate(`/home`)
+        navigate(`/goHome`)
     }
 
     return (
