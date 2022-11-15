@@ -9,6 +9,12 @@ export function logout(){
     localStorage.clear();
 }
 
+function goHome(){
+    //setIsSearch(false);
+    console.log('hello');
+    return redirect(`/home`)
+}
+
 function Home(){
 
     const params = useParams()
@@ -22,11 +28,6 @@ function Home(){
 
     const{isSearch , setIsSearch} = useContext(SelectRepositoryContext);
 
-    function goHome(){
-        //setIsSearch(false);
-        console.log('hello');
-        return (<> <Link to={`/home`}></Link></>)
-    }
 
     return (
         <>
