@@ -1,5 +1,5 @@
 import React ,  { useContext, useEffect} from 'react';
-import { Link, useNavigate, useParams } from 'react-router-dom';
+import { createBrowserRouter, Link, useNavigate, useParams } from 'react-router-dom';
 import '../../css/home.css'
 import { SelectRepositoryContext } from '../../utils/hooks/context';
 import Users from '../Users';
@@ -12,7 +12,8 @@ export function logout(){
 function Home(){
 
     const params = useParams()
-    console.log(params)
+    console.log(params);
+    
     const navigate = useNavigate();
     useEffect(() =>{
         if(!localStorage.getItem('data'))
@@ -24,7 +25,10 @@ function Home(){
     function goHome(){
         //setIsSearch(false);
         console.log('hello');
-        navigate(`/home`)
+        //navigate(`/home`)
+       const hist =  createBrowserRouter();
+       hist.push(`/home`)
+
     }
 
     return (
