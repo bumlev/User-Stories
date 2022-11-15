@@ -1,7 +1,7 @@
 import React ,  { useContext, useEffect} from 'react';
 import {  Link, useNavigate, useParams } from 'react-router-dom';
 import '../../css/home.css'
-import { SelectRepositoryContext } from '../../utils/hooks/context';
+import { SelectUserContext } from '../../utils/hooks/context';
 import Users from '../Users';
 import User from '../Users/user';
 
@@ -13,7 +13,6 @@ function Home(){
 
     const params = useParams()
     //console.log(params);
-    
     const navigate = useNavigate();
 
     useEffect(() =>{
@@ -21,8 +20,9 @@ function Home(){
             navigate('/');
     })
 
-    const{isSearch , setIsSearch} = useContext(SelectRepositoryContext);
-    setIsSearch(false);
+    const{isSearch , setIsSearch} = useContext(SelectUserContext);
+   
+    console.log(isSearch)
 
     return (
         <>
@@ -38,7 +38,7 @@ function Home(){
                 </ul>
             </nav>
             {
-                !params.ProfileName && !params.repositoryname && isSearch == false ? (
+                !params.ProfileName && !params.repositoryname ? (
                     <Users/>
                 ):(
                     <User/>
