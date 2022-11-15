@@ -29,7 +29,8 @@ export const SelectUserProvider = ({children}) =>{
     const [User , setUsername] = useState('')
     const [isSearch , setIsSearch] = useState(false)
 
-    const saveUsername = (user) =>{     
+    const saveUsername = (user) =>{ 
+        console.log(user)    
         setUsername(user)
         document.getElementById('searchUser').value=user.login;
         document.getElementById('search_lists').style.display='none';
