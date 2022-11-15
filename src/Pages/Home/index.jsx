@@ -1,5 +1,5 @@
 import React ,  { useContext, useEffect} from 'react';
-import {  Link, redirect, useNavigate, useParams } from 'react-router-dom';
+import {  Link, useNavigate, useParams } from 'react-router-dom';
 import '../../css/home.css'
 import { SelectRepositoryContext } from '../../utils/hooks/context';
 import Users from '../Users';
@@ -12,7 +12,7 @@ export function logout(){
 function Home(){
 
     const params = useParams()
-    console.log(params);
+    //console.log(params);
     
     const navigate = useNavigate();
 
@@ -23,19 +23,19 @@ function Home(){
 
     const{isSearch , setIsSearch} = useContext(SelectRepositoryContext);
 
-    function goHome(){
+   /* function goHome(){
         //setIsSearch(false);
         console.log('hello');
         console.log(navigate(`/goHome`));
         return navigate(`/goHome`);
-    }
+    }*/
 
     return (
         <>
             <nav>
                 <ul className="list_menu">
                     <li className="Name_project">
-                        <Link  onClick={()=>goHome()}>
+                        <Link to={`/home`}  onClick={()=>goHome()}>
                             <i className="fa fa-github"></i>
                             <span data-testid="git">GitHub API</span>
                         </Link>
