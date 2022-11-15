@@ -25,7 +25,7 @@ function Home(){
     function goHome(){
         //setIsSearch(false);
         console.log('hello');
-        redirect(`/home`)
+        return (<>redirect(`/home`)</>)
     }
 
     return (
