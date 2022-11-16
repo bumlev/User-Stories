@@ -20,7 +20,7 @@ function Home(){
             navigate('/');
     })
 
-    const{isSearch , setIsSearch} = useContext(SelectUserContext);
+    //const{isSearch , setIsSearch} = useContext(SelectUserContext);
    
     return (
         <>
